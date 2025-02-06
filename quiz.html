@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="quiz.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <!--for title logo-->
+    <link rel="shortcut icon" href="Img/cold_logo.ico" /> 
+</head>
+<body id="body">
+
+     <!-- header -->
+     <header>
+        <div class="container">
+            <div id="band-name">
+                <h1><span style="color:yellow; font-style:italic; font-family:Georgia, 'Times New Roman', Times, serif;">C</span>oldPlay</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="store_coldplay.html">Store</a></li>
+                    <li class="current"><a href="quiz.html">Quiz</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="query_form.html">Contact Us</a></li>
+                    <li><a href="student_details.html">Developers</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- end of header -->
+
+    <!--Multiple-choice quiz-->
+    <div id="home_area" class='start_question_box'>
+        <h3>Welcome to the Quiz</h3><!--Rules of the quize -->
+        <br>
+        <p>There are <span class='total-questions'>10</span> questions in this quiz.</p>
+        <p>You have only 60 sec to answer the quiz.</p>
+        <p>The time will start after you press the start button.</p>
+        <button type='button' class='btn' onclick="showQuestions()">Start</button>
+    </div>
+    <!--10 questions included-->
+    <div id="questions_area" hidden>
+        <!--question 1-->
+        <div class='question_box' > 
+            
+            <p class='question-number'>Question 1 </p>
+            <p class='question'>1. When was Coldplay formed?</p>
+            <input type="radio" class='answer' name="answer1" value="0">A.  1999.<br>
+            <input type="radio" class='answer' name="answer1" value="1">B.  1996.<br>
+            <input type="radio" class='answer' name="answer1" value="2">C.  2000.<br>
+            <input type="radio" class='answer' name="answer1" value="3">D.  2002.<br>
+        </div>
+        <!--question 2-->
+        <div class='question_box'>
+            <p class='question_number'>Question 2 </p>
+            <p class='question'>2. Birth place of Coldplay?</p>
+            <input type="radio" class='answer' name="answer2" value="0">A.  New York, USA.<br>
+            <input type="radio" class='answer' name="answer2" value="1">B.  Cambrigde, England.<br>
+            <input type="radio" class='answer' name="answer2" value="2">C.  California, USA.<br>
+            <input type="radio" class='answer' name="answer2" value="3">D.  London, England.<br>
+        </div>
+        <!--question 3-->
+        <div class='question_box'>
+            <p class='question_number'>Question 3 </p>
+            <p class='question'>3. How many members are there in Coldplay?</p>
+            <input type="radio" class='answer' name="answer3" value="0">A.  3.<br>
+            <input type="radio" class='answer' name="answer3" value="1">B.  5.<br>
+            <input type="radio" class='answer' name="answer3" value="2">C.  4.<br>
+            <input type="radio" class='answer' name="answer3" value="3">D.  6.<br>
+        </div>
+        <!--question 4-->
+        <div class='question_box'>
+            <p class='question_number'>Question 4 </p>
+            <p class='question'>4. What was the best selling album by Coldplay?</p>
+            <input type="radio" class='answer' name="answer4" value="0">A.  A Rush of Blood to the Head.<br>
+            <input type="radio" class='answer' name="answer4" value="1">B.  Parachutes.<br>
+            <input type="radio" class='answer' name="answer4" value="2">C.  A Head Full of Dreams.<br>
+            <input type="radio" class='answer' name="answer4" value="3">D.  Mylo Xyloto.<br>
+        </div>
+        <!--question 5-->
+        <div class='question_box'>
+            <p class='question_number'>Question 5 </p>
+            <p class='question'>5. Who plays the Bass Guitar in Coldplay?</p>
+            <input type="radio" class='answer' name="answer5" value="0">A.  Guy Berryman.<br>
+            <input type="radio" class='answer' name="answer5" value="1">B.  Will Champion.<br>
+            <input type="radio" class='answer' name="answer5" value="2">C.  Johnny Bucland.<br>
+            <input type="radio" class='answer' name="answer5" value="3">D.  Phil Harvey.<br>
+        </div>
+        <!--question 6-->
+        <div class='question_box'>
+            <p class='question_number'>Question 6 </p>
+            <p class='question'>6. Who is the Vocalist in Coldplay?</p>
+            <input type="radio" class='answer' name="answer6" value="0">A.  Phil Harvey.<br>
+            <input type="radio" class='answer' name="answer6" value="1">B.  Will Champion.<br>
+            <input type="radio" class='answer' name="answer6" value="2">C.  Chris Martin.<br>
+            <input type="radio" class='answer' name="answer6" value="3">D.  Guy Berryman.<br>
+        </div>
+        <!--question 7-->
+        <div class='question_box'>
+            <p class='question_number'>Question 7 </p>
+            <p class='question'>7. When did Coldplay made their debut?</p>
+            <input type="radio" class='answer' name="answer7" value="0">A.  1998.<br>
+            <input type="radio" class='answer' name="answer7" value="1">B.  1999.<br>
+            <input type="radio" class='answer' name="answer7" value="2">C.  1997.<br>
+            <input type="radio" class='answer' name="answer7" value="3">D.  2000.<br>
+        </div>
+        <!--question 8-->
+        <div class='question_box'>
+            <p class='question_number'>Question 8 </p>
+            <p class='question'>8. What was Coldplay's orignial name?</p>
+            <input type="radio" class='answer' name="answer8" value="0">A.  Starplay.<br>
+            <input type="radio" class='answer' name="answer8" value="1">B.  Pectoralz.<br>
+            <input type="radio" class='answer' name="answer8" value="2">C.  Rhythm.<br>
+            <input type="radio" class='answer' name="answer8" value="3">D.  Vibes.<br>
+        </div>
+        <!--question 9-->
+        <div class='question_box'>
+            <p class='question_number'>Question 9 </p>
+            <p class='question'>9. How many pianists are there in Coldplay?</p>
+            <input type="radio" class='answer' name="answer9" value="0">A.  3.<br>
+            <input type="radio" class='answer' name="answer9" value="1">B.  4.<br>
+            <input type="radio" class='answer' name="answer9" value="2">C.  1.<br>
+            <input type="radio" class='answer' name="answer9" value="3">D.  2.<br>
+        </div>
+        <!--question 10-->
+        <div class='question_box'>
+            <p class='question_number'>Question 10 </p>
+            <p class='question'>10. What makes Coldplay different from other muscial bands?</p>
+            <input type="radio" class='answer' name="answer10" value="0">A.  The pace.<br>
+            <input type="radio" class='answer' name="answer10" value="1">B.  The voice.<br>
+            <input type="radio" class='answer' name="answer10" value="2">C.  Harmonies and Melodic lines.<br>
+            <input type="radio" class='answer' name="answer10" value="3">D.  The rock and R&B<br>
+        </div>
+
+        <div class="question_box">
+            <button type="button" class="btn" id="toTop" onclick="goToTop()">Back to Top</button>
+            <button type="submit" id="quize_submit_btn" class="btn" onclick="showResults()">Submit</button>
+        </div>
+    </div>
+    <!-- Results Area-->
+    <div id="results_area" class='results_box' hidden>
+        <h1 class='results'>Results</h1>
+        <p class='total' id='total'></p>
+        <table>
+            <tr>
+                <th>Question Number</th>
+                <th>Correct Answer</th>
+                <th>Your Answer</th>
+            </tr>
+            <tr>
+                <td>Question 1</td>
+                <td>1996</td>
+                <td id="q1"></td>
+            </tr>
+            <tr>
+                <td>Question 2</td>
+                <td>London,England</td>
+                <td id="q2"></td>
+            </tr>
+            <tr>
+                <td>Question 3</td>
+                <td>5</td>
+                <td id="q3"></td>
+            </tr>
+            <tr>
+                <td>Question 4</td>
+                <td>A Rush of Blood to The Head</td>
+                <td id="q4"></td>
+            </tr>
+            <tr>
+                <td>Question 5</td>
+                <td>Guy Berryman</td>
+                <td id="q5"></td>
+            </tr>
+            <tr>
+                <td>Question 6</td>
+                <td>Chris Martin</td>
+                <td id="q6"></td>
+            </tr>
+            <tr>
+                <td>Question 7</td>
+                <td>1999</td>
+                <td id="q7"></td>
+            </tr>
+            <tr>
+                <td>Question 8</td>
+                <td>Pectoralz</td>
+                <td id="q8"></td>
+            </tr>
+            <tr>
+                <td>Question 9</td>
+                <td>3</td>
+                <td id="q9"></td>
+            </tr>
+            <tr>
+                <td>Question 10</td>
+                <td>Harmonies and Melodic lines</td>
+                <td id="q10"></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="row">
+            <div class="column">
+                <img class="logo" src="Img/cold2.jpg " alt="">
+                <p>We are COLDPLAY the rock band.</p>
+                <p>Reach us at: <a id="reach-coldplay" href="https://www.coldplay.com/">christ.m@cold.com</a></p>
+            </div>
+            <div class="column">
+                <h3>Office</h3>
+                <p>3D Managements</p>
+                <p>Music Artists Management Company</p>
+                <p>1901 Main Street 3rd Floor,</p>
+                <p>Santa Monica, California 90405, United States</p>
+                <br>
+                <h4>310-566-0880, Fax : 323-693-7733</h4>
+            </div>
+            <div class="column">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="store_coldplay.html">Store</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="query_form.html">Contact Us</a></li>
+                    <li><a href="student_details.html">Developers</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Newsletter</h3>
+                <form class="footer-form">
+                    <label>Subscribe to our Newsletter</label>
+                    <input type="email" name="email" id="newsletter-email" placeholder="Enter your email" required>
+                    <button type="submit" id="submit-button">Submit</button>
+                    <h4 id="site-map"><a href="sitemap.html">Site Map</a></h4>
+                </form>
+            </div>
+        </div>
+
+        <hr>
+        <div class="credentials">
+            <p class="copyright">©Code 4x 2022 - All credits goes to <a href="https://www.coldplay.com/homepage/"><span style="color: yellow;">Coldplay official.</span></a></p>
+            <p class="page-editor"><button onclick="location.href = 'page_editor_Ishan.html';"  id="page-editor-button">Page editor: Ishan Akmal Samsudeen</button></p>
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        </div>
+
+    </footer>
+    <!-- end of footer -->
+
+    <!-- linking main.js -->
+    <script src="main.js"></script>
+    </body>
+</html>

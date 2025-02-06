@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="query_form.css">
+    <link rel="stylesheet" href="main.css">
+    <!--for title logo-->
+    <link rel="shortcut icon" href="Img/cold_logo.ico" /> 
+</head>
+<body id="contactUs">
+
+    <!-- header -->
+    <header>
+        <div class="container">
+            <div id="band-name">
+                <h1><span style="color:yellow; font-style:italic; font-family:Georgia, 'Times New Roman', Times, serif;">C</span>oldPlay</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="store_coldplay.html">Store</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li class="current"><a href="query_form.html">Contact Us</a></li>
+                    <li><a href="student_details.html">Developers</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- queryForm -->
+    <div class="queryForm" id="queryForm">
+        <form class="contactUs-form" id="data-form" onsubmit="event.preventDefault(); validateForm();">
+            <h3>Contact us</h3>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Your Name" >
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Your Email" >
+
+            <label for="phone">Mobile:</label>
+            <input type="tel" id="mobile" placeholder="Your Mobile" >
+
+            <label for="selection">Please choose your inqury type</label>
+            <select name="select-option" id="select-option">
+                <option disabled="disabled" selected="selected" value="Choose a subject">Choose a subject</option>
+                <option value="delivery">Delivery</option>
+                <option value="event">Event</option>
+                <option value="quize">Quize</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="msg">Message:</label>
+            <textarea name="msg" id="msg"  rows="6" placeholder="Write something to us.."></textarea>
+
+            <div class="button-view-query">
+                <button type="submit" id="view-query-button">View Query</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="queryForm">
+        <div class="finalized-form" id="finalized-form" style="display: none;">
+            <!-- view query window -->
+            <div>
+                <h2>Confirmation</h2>
+                <h3>Name: <span id="view-name"></span></h3>
+                <h3>Email: <span id="view-email"></span></h3>
+                <h3>Mobile: <span id="view-mobile"></span></h3>
+                <h3>Subject: <span id="view-subject"></span></h3>
+                <h3>Messsage: <span id="view-msg"></span></h3>
+            </div>
+
+            <!-- view mail window -->
+            <div>
+                <form action="mailto:kalindu.20211338@iit.ac.lk" method="post" enctype="text/plain">
+                    <input type="hidden" name="Name" id="email_name">
+                    <input type="hidden" name="Email" id="email_email">
+                    <input type="hidden" name="Mobile" id="email_mobile">
+                    <input type="hidden" name="Subjects" id="email_subjects">
+                    <input type="hidden" name="Details" id="email_details"> 
+                    
+                    <div class="button-container">
+                        <button class="button-class" type="submit" onclick="manipulateForm()">Send</button>
+                    </div>
+               </form>
+            </div>
+
+             <div class="button-container">
+                <button class="button-class" type="submit" onclick="manipulateForm()">Edit</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- linking .js file -->
+    <script src="query_form.js"></script>
+
+    <!-- footer -->
+    <footer>
+        <div class="row">
+            <div class="column">
+                <img class="logo" src="Img/cold2.jpg " alt="">
+                <p>We are COLDPLAY the rock band.</p>
+                <p>Reach us at: <a id="reach-coldplay" href="https://www.coldplay.com/">christ.m@cold.com</a></p>
+            </div>
+            <div class="column">
+                <h3>Office</h3>
+                <p>3D Managements</p>
+                <p>Music Artists Management Company</p>
+                <p>1901 Main Street 3rd Floor,</p>
+                <p>Santa Monica, California 90405, United States</p>
+                <br>
+                <h4>310-566-0880, Fax : 323-693-7733</h4>
+            </div>
+            <div class="column">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="store_coldplay.html">Store</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="query_form.html">Contact Us</a></li>
+                    <li><a href="student_details.html">Developers</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Newsletter</h3>
+                <form>
+                    <label>Subscribe to our Newsletter</label>
+                    <input type="email" name="email" id="email-footer" placeholder="Enter your email" required>
+                    <button type="submit" id="submit-button">Submit</button>
+                    <h4 id="site-map"><a href="sitemap.html">Site Map</a></h4>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="credentials">
+            <p class="copyright">©Code 4x 2022 - All credits goes to <a href="https://www.coldplay.com/homepage/"><span style="color: yellow;">Coldplay official.</span></a></p>
+            <p class="page-editor"><button onclick="location.href = 'page_editor_kalindu.html';"  id="page-editor-button">Page editor: Kalindu Agathisi</button></p>
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        </div>
+
+
+    </footer>
+
+    <!-- linking main.js -->
+    <script src="main.js"></script>
+</body>
+</html>

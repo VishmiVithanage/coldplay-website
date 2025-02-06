@@ -1,0 +1,111 @@
+/* page editor css */
+.page-editor-individual{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 50px auto 10px;
+    border: 2px solid yellow;
+    border-radius: 10px;
+    /* background: #c9d5de; */
+    
+}
+
+#editor-image{
+    width: 300px;
+    height: 400px;
+    padding: 0;
+}
+
+
+.page-editor-individual::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transform: scaleX(0);
+    opacity: 0;
+}
+
+.page-editor-individual:hover::before {
+    transform: scaleX(1);
+    opacity: 1;
+}
+
+.page-editor-individual::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transform: scaleY(0);
+    opacity: 0;
+}
+
+.page-editor-individual:hover::after {
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+.page-editor-individual .editor-image {
+    position: relative;
+}
+
+.page-editor-individual .editor-image img {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.page-editor-individual:hover .editor-image img {
+    opacity: 0.2;
+    transform: scale(1.2);
+}
+
+.page-editor-individual .editor-info {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.page-editor-individual .editor-info h2 {
+    margin: 0 0 10px;
+    padding: 0;
+    color: white;
+    transition: 0.5s;
+    transform: translateY(-50%);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.page-editor-individual .editor-info p {
+    margin: 0;
+    padding: 0;
+    color: white;
+    transition: 0.5s;
+    transform: translateY(50%);
+    opacity: 0;
+    visibility: hidden;
+    line-height: 30px;
+}
+
+.page-editor-individual:hover .editor-info h2,
+.page-editor-individual:hover .editor-info p {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}

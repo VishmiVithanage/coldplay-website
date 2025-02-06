@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page editor</title>
+    <link rel="stylesheet" href="page_editor.css">
+    <link rel="stylesheet" href="main.css">
+    <!--for title logo-->
+    <link rel="shortcut icon" href="Img/cold_logo.ico" /> 
+</head>
+<body>
+
+     <!-- header -->
+     <header>
+        <div class="container">
+            <div id="band-name">
+                <h1><span style="color:yellow; font-style:italic; font-family:Georgia, 'Times New Roman', Times, serif;">C</span>oldPlay</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="store_coldplay.html">Store</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="query_form.html">Contact Us</a></li>
+                    <li><a href="student_details.html">Developers</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- end of header -->
+
+    <div class="page-editor-individual">
+        <div class="editor-image">
+            <img id="editor-image" src="PageEditor_img/Agathisi.jpg" alt="">
+        </div>
+
+        <div class="editor-info">
+            <h2>Kalindu Agathisi</h2>
+            <p>UoW ID: w1898947</p>
+            <p>IIT ID: 20211338</p>
+            <p>Task 01: Main page nav bar</p>
+            <p>Task 02: Query form</p>
+            <p>Task 03: External style sheet</p>
+            <p>Task 04: Home page</p>
+            <p>Task 05: Page editor</p>
+            <p>Email: kalindu.20211338@iit.ac.lk</p>
+            <p>Mobile: 0719 835 837</p>
+
+        </div>
+    </div>
+
+     <!-- footer -->
+     <footer>
+        <div class="row">
+            <div class="column">
+                <img class="logo" src="Img/cold2.jpg " alt="">
+                <p>We are COLDPLAY the rock band.</p>
+                <p>Reach us at: <a id="reach-coldplay" href="https://www.coldplay.com/">christ.m@cold.com</a></p>
+            </div>
+            <div class="column">
+                <h3>Office</h3>
+                <p>3D Managements</p>
+                <p>Music Artists Management Company</p>
+                <p>1901 Main Street 3rd Floor,</p>
+                <p>Santa Monica, California 90405, United States</p>
+                <br>
+                <h4>310-566-0880, Fax : 323-693-7733</h4>
+            </div>
+            <div class="column">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="store_coldplay.html">Store</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="query_form.html">Contact Us</a></li>
+                    <li><a href="student_details.html">Developers</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Newsletter</h3>
+                <form class="footer-form">
+                    <label>Subscribe to our Newsletter</label>
+                    <input type="email" name="email" id="newsletter-email" placeholder="Enter your email" required>
+                    <button type="submit" id="submit-button">Submit</button>
+                    <h4 id="site-map"><a href="sitemap.html">Site Map</a></h4>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="credentials">
+            <p class="copyright">©Code 4x 2022 - All credits goes to <a href="https://www.coldplay.com/homepage/"><span style="color: yellow;">Coldplay official.</span></a></p>
+            <!-- <p class="page-editor"><button onclick="location.href = 'query_form.html';"  id="page-editor-button">Page editor: Kalindu Agathisi</button></p> -->
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        </div>
+
+    </footer>
+    <!-- end of footer -->
+
+    <!-- linking main.js -->
+    <script src="main.js"></script>
+</body>
+</html>

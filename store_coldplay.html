@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ColdPlay Store</title>
+        <link rel="shortcut icon" href="Img/cold_logo.jpg" /> <!--for title logo-->
+
+        <!-- css for store_coldplay.html part only -->
+        <link rel="stylesheet" href="store_coldplay.css" />
+
+        <!-- css for header and footer  -->
+        <link rel="stylesheet" href="main.css">
+
+        <!-- js for store_coldplay.html -->
+        <script src="store_coldplay.js" async></script>
+    </head>
+
+    <body id="store-body">
+        <!-- header -->
+        <header>
+            <div class="container">
+                <div id="band-name">
+                    <h1><span style="color:yellow; font-style:italic; font-family:Georgia, 'Times New Roman', Times, serif;">C</span>oldPlay </h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="main.html">Home</a></li>
+                        <li class="current"><a href="store_coldplay.html">Store</a></li>
+                        <li><a href="quiz.html">Quiz</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="query_form.html">Contact Us</a></li>
+                        <li><a href="student_details.html">Developers</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- end of header -->
+
+        <!-- cover image of the store -->
+        <div class="cover">
+            <img src="Img/cover.jpg" alt="">
+            <div class="text1">
+                <h1>Get upto 20% discount for new arrivals</h1>
+                <h4>Stadium tour collection 2022</h4>
+            </div>  
+        </div>
+    
+        <!-- Album section of the store -->
+        <section class="content-section1">
+            <h2 class="section-header">ALBUMS</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Parachutes</span>
+                    <img class="shop-item-image" src="Img/album1.jpg" alt="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$12.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Ghost Stories</span>
+                    <img class="shop-item-image" src="Img/album2.jpg" alt="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$14.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Music of the Spher</span>
+                    <img class="shop-item-image" src="Img/album3.jpg" alt="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$9.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Butterfly</span>
+                    <img class="shop-item-image" src="Img/album6.jpg" alt="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$12.00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Merch section of the store -->
+        <section class="content-section1">
+            <h2 class="section-header" style="margin-top: 20%;">MERCH</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Tote bag</span>
+                    <img class="shop-item-image" src="Img/bag2.jpg" alt="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Pullover Hoodie</span>
+                    <img class="shop-item-image" src="Img/hoodie2.jpg" alt="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$6.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Summer Hat</span>
+                    <img class="shop-item-image" src="Img/hat.jpg" alt="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$6.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Bottle</span>
+                    <img class="shop-item-image" src="Img/bottle.jpg" alt="">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$6.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Customer bill information with the item selected quantity and the total price -->
+        <section class="content-section1">
+            <h2 class="section-header" style="margin-top: 20%;">Your Bill Information</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+
+            <h1 class="text2">Fill below information to proceed</h1>
+
+            <!-- A form including customer information -->
+            <div class="form-info">
+                <form>
+                    <div>
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="Firstname" placeholder="Your First name">
+                    </div>
+                    
+                    <div>
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="Lastname" placeholder="Your last name">
+                    </div>
+            
+                    <div>
+                        <label for="email">Email Address</label>
+                        <input type="text" id="email" name="Email Address" placeholder="Your email">
+                    </div>
+                
+                    <div>
+                        <label for="country">Country</label>
+                        <select id="country" name="Country">
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="sri lanka">Sri Lanka</option>
+                            <option value="usa">USA</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <!-- Purchase button to confirm the order and validation using javascript -->
+            <button class="btn btn-primary btn-purchase" type="button" onclick="validateForm()">PURCHASE</button>
+        </section>
+
+
+        <!-- footer -->
+        <footer style="margin-top: 10%;">
+            <div class="row">
+                <div class="column">
+                    <img class="logo" src="Img/cold2.jpg " alt="">
+                    <p>We are COLDPLAY the rock band.</p>
+                    <p>Reach us at: <a id="reach-coldplay" href="https://www.coldplay.com/">christ.m@cold.com</a></p>
+                </div>
+                <div class="column">
+                    <h3>Office</h3>
+                    <p>3D Managements</p>
+                    <p>Music Artists Management Company</p>
+                    <p>1901 Main Street 3rd Floor,</p>
+                    <p>Santa Monica, California 90405, United States</p>
+                    <br>
+                    <h4>310-566-0880, Fax : 323-693-7733</h4>
+                </div>
+                <div class="column">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="main.html">Home</a></li>
+                        <li><a href="store_coldplay.html">Store</a></li>
+                        <li><a href="quiz.html">Quiz</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="query_form.html">Contact Us</a></li>
+                        <li><a href="student_details.html">Developers</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Newsletter</h3>
+                    <form class="footer-form">
+                        <label>Subscribe to our Newsletter</label>
+                        <input type="email" name="email" id="newsletter-email" placeholder="Enter your email" required>
+                        <button type="submit" id="submit-button">Submit</button>
+                        <h4 id="site-map"><a href="sitemap.html">Site Map</a></h4>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class="credentials">
+                <p class="copyright">©Code 4x 2022 - All credits goes to <a href="https://www.coldplay.com/homepage/"><span style="color: yellow;">Coldplay official.</span></a></p>
+                <p class="page-editor"><button onclick="location.href = 'page_editor_vishmi.html';"  id="page-editor-button">Page editor: Vishmi Vithanage</button></p>
+                <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+            </div>
+
+        </footer>
+        <!-- end of footer -->
+
+
+        <!-- linking main.js -->
+        <script src="main.js"></script>
+        <!-- linking javascript file for the validation -->
+        <script src="validate.js"></script>
+
+    </body>
+</html>
